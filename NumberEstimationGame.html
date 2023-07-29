@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        var estimatedNumber = 0;
+        var counter = 0;
+        do {
+            counter++;
+            estimatedNumber = Number(prompt("Enter your estimation"));
+            if (estimatedNumber == randomNumber) {
+                alert("Well Done!!! You Win after " + counter + " tries.");
+            } else if (estimatedNumber > randomNumber) {
+                alert("Enter smaller number")
+            } else (estimatedNumber < randomNumber)
+            alert("Enter larger number")
+        } while (estimatedNumber != randomNumber);
+    </script>
+
+</body>
+
+</html>
